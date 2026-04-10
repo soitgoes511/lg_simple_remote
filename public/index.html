@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cartoons Launcher</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero">
+        <p class="eyebrow">LG webOS launcher</p>
+        <h1 id="page-title">Cartoons</h1>
+        <p id="page-subtitle" class="subtitle">
+          A simple page with big buttons for favorite shows.
+        </p>
+        <div class="status-row">
+          <span id="tv-status" class="pill pill-muted">Checking TV connection...</span>
+          <span id="config-status" class="pill pill-muted">Loading buttons...</span>
+        </div>
+      </section>
+
+      <section class="quick-actions">
+        <button type="button" class="quick-button" data-command="power-on">Turn TV On</button>
+        <button type="button" class="quick-button" data-command="youtube-home">Open YouTube</button>
+        <button type="button" class="quick-button" data-command="pause">Pause</button>
+        <button type="button" class="quick-button" data-command="back">Back</button>
+        <button type="button" class="quick-button" data-command="power-off">Turn TV Off</button>
+        <button type="button" class="quick-button" data-command="refresh-status">Refresh Status</button>
+      </section>
+
+      <section>
+        <div id="launcher-grid" class="launcher-grid"></div>
+      </section>
+
+      <section class="footer-panel">
+        <p id="message" class="message">Ready.</p>
+        <p class="hint">
+          First run tip: the TV may ask you to allow this server to connect. Accept it once on the TV.
+        </p>
+      </section>
+    </main>
+
+    <template id="card-template">
+      <button type="button" class="launcher-card">
+        <span class="launcher-card__label"></span>
+        <span class="launcher-card__detail"></span>
+      </button>
+    </template>
+
+    <script src="/app.js" defer></script>
+  </body>
+</html>
