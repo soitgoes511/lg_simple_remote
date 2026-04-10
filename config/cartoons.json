@@ -1,0 +1,37 @@
+{
+  "title": "Cartoons For Home",
+  "subtitle": "Edit this file to list only the few videos or playlists she actually wants.",
+  "actions": [
+    {
+      "id": "bluey",
+      "label": "Bluey",
+      "description": "Replace with one long Bluey video or playlist",
+      "type": "youtube",
+      "target": "v=PUT_BLUEY_VIDEO_ID_HERE",
+      "accent": "#6fc5ff"
+    },
+    {
+      "id": "peppa-pig",
+      "label": "Peppa Pig",
+      "description": "Replace with one long Peppa Pig video or playlist",
+      "type": "youtube",
+      "target": "v=PUT_PEPPA_VIDEO_ID_HERE",
+      "accent": "#ff9ec4"
+    },
+    {
+      "id": "pocoyo",
+      "label": "Pocoyo",
+      "description": "Replace with one long Pocoyo video or playlist",
+      "type": "youtube",
+      "target": "v=PUT_POCOYO_VIDEO_ID_HERE",
+      "accent": "#8dd7c0"
+    },
+    {
+      "id": "youtube-search",
+      "label": "YouTube Search Page",
+      "description": "Fallback option that opens YouTube in the browser",
+      "type": "browser",
+      "url": "https://www.youtube.com/"
+    }
+  ]
+}
